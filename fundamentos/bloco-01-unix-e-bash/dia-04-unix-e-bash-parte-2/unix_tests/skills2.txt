@@ -1,0 +1,8 @@
+Internet
+Unix
+Bash
+Violão
+Python
+HTML
+CSS
+JS
