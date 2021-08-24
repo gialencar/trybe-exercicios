@@ -1,0 +1,61 @@
+ol {
+    background-color: yellow;
+}
+
+li {
+    font-size: 20px;
+}
+
+li em {
+    font-weight: 600;
+}
+
+ol li:nth-child(even) {
+    color: green;
+}
+
+ol li:nth-child(odd) {
+    text-transform: capitalize;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: red;
+}
+
+:is(h1, h2, h3, h4, h5, h6) em {
+    font-size: 40px;
+    border: solid 1px black;
+}
+
+ul.prog-languages li:nth-child(-n+3) {
+    color: blue;
+}
+
+.pink-bg {
+    background-color: pink;
+}
+
+ul li:nth-child(1) a:hover {
+    color: orange;
+    font-weight: 600;
+}
+
+ul li:nth-child(2) a:hover {
+    color: green;
+    font-weight: 600;
+}
+
+ul li:nth-child(3) a:hover {
+    color: black;
+    font-weight: 600;
+}
+
+ul li:nth-child(4) a:hover {
+    color: yellow;
+    font-weight: 600;
+}
+
+ul li:nth-child(5) a:hover {
+    color: green;
+    font-weight: 600;
+}
