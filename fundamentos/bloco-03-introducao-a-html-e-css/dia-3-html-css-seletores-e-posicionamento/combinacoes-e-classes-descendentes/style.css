@@ -27,3 +27,31 @@ h1, h2, h3, h4, h5, h6 {
     border: solid 1px black;
 }
 
+ul.prog-languages li:nth-child(-n+3) {
+    color: blue;
+}
+
+ul li:nth-child(1) a:hover {
+    color: orange;
+    font-weight: 600;
+}
+
+ul li:nth-child(2) a:hover {
+    color: green;
+    font-weight: 600;
+}
+
+ul li:nth-child(3) a:hover {
+    color: black;
+    font-weight: 600;
+}
+
+ul li:nth-child(4) a:hover {
+    color: yellow;
+    font-weight: 600;
+}
+
+ul li:nth-child(5) a:hover {
+    color: green;
+    font-weight: 600;
+}
