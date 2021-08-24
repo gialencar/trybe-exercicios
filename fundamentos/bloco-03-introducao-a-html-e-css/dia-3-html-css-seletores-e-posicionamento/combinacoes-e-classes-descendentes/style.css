@@ -31,6 +31,10 @@ ul.prog-languages li:nth-child(-n+3) {
     color: blue;
 }
 
+.pink-bg {
+    background-color: pink;
+}
+
 ul li:nth-child(1) a:hover {
     color: orange;
     font-weight: 600;
