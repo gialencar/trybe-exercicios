@@ -1,0 +1,4 @@
+
+function wordTail(string, substring) {
+    
+}
