@@ -68,3 +68,64 @@ function addHolidayEvent() {
   })
 }
 addHolidayEvent();
+
+// ex 4
+function friday(string) {
+  const btn = document.createElement('button');
+  btn.innerText = string;
+  btn.id = 'btn-friday';
+  document.querySelector('.buttons-container').appendChild(btn);
+}
+
+friday('sexta-feira');
+
+// ex 5
+function addFridayFunctionality() {
+  const fridays = document.querySelectorAll('.friday');
+  const btn = document.querySelector('#btn-friday');
+  btn.addEventListener('click', () => {
+    for (let i = 0; i < fridays.length; i += 1) {
+      if (fridays[i].innerText === 'Sextou!') {
+        const sibling = fridays[i].previousSibling;
+        fridays[i].innerText = (parseInt(sibling.innerText) + 1);
+      } else {
+        fridays[i].innerText = 'Sextou!';
+      }
+    }
+  })
+}
+addFridayFunctionality();
+
+// ex 6
+function zoomIn(event) {
+  event.target.style.fontSize = '25px';
+}
+
+function zoomOut(event) {
+  event.target.style.fontSize = '20px';
+}
+
+const days = document.querySelectorAll('.day');
+for (let i = 0; i < days.length; i += 1) {
+  days[i].addEventListener('mouseenter', zoomIn);
+  days[i].addEventListener('mouseleave', zoomOut);
+}
+
+// ex 7
+
+function addTask(taskName) {
+  const task = document.createElement('span');
+  task.innerText = taskName;
+  document.querySelector('.my-tasks').appendChild(task);
+}
+addTask('cozinhar');
+
+// ex 8
+function addSub(color) {
+  const sub = document.createElement('div');
+  sub.className = 'task';
+  sub.style.backgroundColor = color;
+  document.querySelector('.my-tasks').appendChild(sub);
+}
+
+addSub('red')
