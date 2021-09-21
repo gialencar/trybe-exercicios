@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form de Currículo</title>
+  </head>
+  <body>
+    <form action="" method="get">
+      <fieldset>
+        <label for="nome"
+          >Nome:
+          <input type="text" name="nome" id="nome" maxlength="40" required
+        /></label>
+
+        <label for="email"
+          >e-mail:
+          <input type="email" name="email" id="email" maxlength="50" required
+        /></label>
+
+        <label for="cpf"
+          >CPF:
+          <input type="text" name="cpf" id="cpf" maxlength="11" required />
+        </label>
+
+        <label for="End"
+          >Endereço:
+          <input type="text" name="end" id="end" maxlength="200" required />
+        </label>
+
+        <label for="cidade"
+          >Cidade:
+          <input
+            type="text"
+            name="cidade"
+            id="cidade"
+            maxlength="28"
+            required
+          />
+        </label>
+
+        <label for="estado"
+          >Estado:
+          <select name="estado" id="estado" required></select>
+        </label>
+
+        <label for="tipo">
+          Casa
+          <input type="radio" name="tipo" id="casa" />
+        </label>
+        <label for="apartamento"
+          >Apartamento
+          <input type="radio" name="tipo" id="apartamento" />
+        </label>
+      </fieldset>
+    </form>
+  </body>
+</html>
