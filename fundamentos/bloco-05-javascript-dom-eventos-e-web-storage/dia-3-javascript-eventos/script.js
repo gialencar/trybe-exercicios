@@ -1,5 +1,13 @@
 function createDaysOfTheWeek() {
-  const weekDays = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado']
+  const weekDays = [
+    'Domingo',
+    'Segunda',
+    'Terça',
+    'Quarta',
+    'Quinta',
+    'Sexta',
+    'Sábado',
+  ];
   const weekDaysList = document.querySelector('.week-days');
 
   for (let index = 0; index < weekDays.length; index += 1) {
@@ -8,35 +16,38 @@ function createDaysOfTheWeek() {
     dayListItem.innerHTML = days;
 
     weekDaysList.appendChild(dayListItem);
-  };
-};
+  }
+}
 
 createDaysOfTheWeek();
 
 // Escreva seu código abaixo.
 //ex 1
-const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
+const dezDaysList = [
+  29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+  21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31,
+];
 
 for (const day of dezDaysList) {
-    let dayItem = document.createElement('li');
-    dayItem.innerText = day;
-    dayItem.classList.add('day');
+  let dayItem = document.createElement('li');
+  dayItem.innerText = day;
+  dayItem.classList.add('day');
 
-    switch (day) {
-      case 24:
-      case 25:
-      case 31:
-        dayItem.classList.add('holiday');
-        break;
-      case 4:
-      case 11:
-      case 18:
-      case 25:
-        dayItem.classList.add('friday');
-        break;
-    }
+  switch (day) {
+    case 24:
+    case 25:
+    case 31:
+      dayItem.classList.add('holiday');
+      break;
+    case 4:
+    case 11:
+    case 18:
+    case 25:
+      dayItem.classList.add('friday');
+      break;
+  }
 
-    document.querySelector('#days').appendChild(dayItem);
+  document.querySelector('#days').appendChild(dayItem);
 }
 
 //ex 2
@@ -51,13 +62,13 @@ createBtn('Feriados');
 //ex 3
 function addHolidayEvent() {
   let holidays = document.querySelectorAll('.holiday');
-  let holidayBtn = document.querySelector('#btn-holiday')
+  let holidayBtn = document.querySelector('#btn-holiday');
   let defaultColor = 'rgb(238,238,238)';
   let holidayColor = 'rgb(47, 193, 140)';
   console.log(holidays[0]);
 
-  holidayBtn.addEventListener('click', function() {
-    holidays.forEach(element => {
+  holidayBtn.addEventListener('click', function () {
+    holidays.forEach((element) => {
       // element.style.backgroundColor = 'black'
       if (element.style.backgroundColor === holidayColor) {
         element.style.backgroundColor = defaultColor;
@@ -65,7 +76,7 @@ function addHolidayEvent() {
         element.style.backgroundColor = holidayColor;
       }
     });
-  })
+  });
 }
 addHolidayEvent();
 
@@ -87,12 +98,12 @@ function addFridayFunctionality() {
     for (let i = 0; i < fridays.length; i += 1) {
       if (fridays[i].innerText === 'Sextou!') {
         const sibling = fridays[i].previousSibling;
-        fridays[i].innerText = (parseInt(sibling.innerText) + 1);
+        fridays[i].innerText = parseInt(sibling.innerText) + 1;
       } else {
         fridays[i].innerText = 'Sextou!';
       }
     }
-  })
+  });
 }
 addFridayFunctionality();
 
@@ -123,9 +134,41 @@ addTask('cozinhar');
 // ex 8
 function addSub(color) {
   const sub = document.createElement('div');
-  sub.className = 'task';
+  sub.classList.add('task');
   sub.style.backgroundColor = color;
   document.querySelector('.my-tasks').appendChild(sub);
 }
+addSub('red');
 
-addSub('red')
+function selectTask() {
+  document.querySelector('.task').addEventListener('click', (event) => {
+    console.log(event.target.className);
+    if (event.target.classList.contains('selected')) {
+      event.target.className = 'task';
+    } else {
+      event.target.className = 'task selected';
+    }
+  });
+}
+selectTask();
+
+function atributeTaskToDay() {
+  const days = document.querySelectorAll('.day');
+
+  for (const day of days) {
+    day.addEventListener('click', (event) => {
+      if (document.querySelector('.selected')) {
+        const color = document.querySelector('.selected').style.backgroundColor;
+
+        if (event.target.style.backgroundColor !== color) {
+          console.log(color);
+          event.target.style.backgroundColor = color;
+          console.log(event.target.style.color);
+        } else {
+          event.target.style.backgroundColor = 'rgb(238,238,238)';
+        }
+      }
+    });
+  }
+}
+atributeTaskToDay();
