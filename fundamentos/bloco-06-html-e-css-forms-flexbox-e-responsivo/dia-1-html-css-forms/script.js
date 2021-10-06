@@ -41,3 +41,10 @@ for (const estado of estados) {
 }
 
 // document.getElementById('estado')
+
+function btnFunc(event) {
+  event.preventDefault;
+}
+
+const btn = document.getElementById('submit-btn');
+btn.addEventListener('click', btnFunc);
