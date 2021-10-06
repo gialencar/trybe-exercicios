@@ -62,3 +62,12 @@ const books = [
 ];
 
 // Adicione o código do exercício aqui:
+const expectedResult = 'O Senhor dos Anéis';
+
+function authorWith3DotsOnName() {
+  return books.filter((book) => {
+    return book.author.name.match(/^[a-z]\. [a-z]\. [a-z]\. /i);
+  });
+}
+
+console.log(authorWith3DotsOnName());
