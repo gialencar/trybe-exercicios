@@ -22,7 +22,7 @@ const battleMembers = { mage, warrior, dragon };
 
 const getDragonDamage = () => {
   const min = 15;
-  const max = dragon.damage;
+  const max = dragon.strength;
   return Math.floor( Math.random() * (max - min) + min );
 }
 
@@ -32,7 +32,7 @@ const getWarriorDamage = () => {
   return Math.floor( Math.random() * (max - min) + min );
 }
 
-const getMageDmgAndManaStats = () => {
+const getMageDmgAndMana = () => {
   const min = mage.intelligence;
   const max = mage.intelligence * 2;
   let damageDealt;
@@ -51,3 +51,31 @@ const getMageDmgAndManaStats = () => {
     spentMana,
   }
 }
+
+const gameActions = {
+  warriorTurn: (callback) => {
+    const dmg = callback();
+    dragon.healthPoints -= dmg;
+    warrior.damage = dmg;
+  },
+  mageTurn: (callback) => {
+    const stats = callback();
+    mage.mana -= stats.spentMana;
+    mage.damage = stats.damageDealt;
+    dragon.healthPoints -= stats.damageDealt;
+  },
+  dragonTurn: (callback) => {
+    const dmg = callback();
+    dragon.damage = dmg;
+    mage.healthPoints -= dmg;
+    warrior.healthPoints -= dmg;
+  },
+  updateBattleMembers: () => {
+    gameActions.warriorTurn(getWarriorDamage);
+    gameActions.mageTurn(getMageDmgAndMana);
+    gameActions.dragonTurn(getDragonDamage);
+    return battleMembers;
+  }
+};
+
+console.log(gameActions.updateBattleMembers());
