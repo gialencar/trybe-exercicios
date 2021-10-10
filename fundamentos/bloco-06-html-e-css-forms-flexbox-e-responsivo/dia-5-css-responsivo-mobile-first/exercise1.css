@@ -1,11 +1,16 @@
-body {
+* {
+  /* border: 1px solid red; */
+}
 
+body {
+  font-size: larger;
+  margin: 10px;
 }
 h1 {
-
+  font-size: xx-large;
 }
 h2 {
-
+  display: inline-block;
 }
 
 img {
@@ -13,5 +18,33 @@ img {
 }
 
 figure {
-    margin: 0;
+    margin: 5px;
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    background-color: cyan;
+    font-size: large;
+    margin: 15px;
+  }
+
+  main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  h2 {
+    flex-grow: 1;
+    max-width: 450px;
+    margin: 5px;
+  }
+}
+
+@media screen and (min-width: 1435px) {
+  body {
+    background-color: bisque;
+    font-size: x-large;
+    margin: auto;
+    max-width: 1435px;
+  }
 }
