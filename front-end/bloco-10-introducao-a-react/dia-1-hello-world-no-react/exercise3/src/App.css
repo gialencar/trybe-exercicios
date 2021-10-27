@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 20vmin;
   pointer-events: none;
 }
 
@@ -35,4 +35,18 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.card {
+  background-color: azure;
+  width: 70%;
+  color: #282c34;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+}
+
+.footer {
+  background-color: azure;
+  width: 100%;
+  color: #282c34;
 }
