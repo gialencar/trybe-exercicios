@@ -1,0 +1,17 @@
+.pokedex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  border: 1px solid grey;
+  border-radius: 1rem;
+  width: 250px;
+  padding: 1%;
+}
+
+.card img {
+  width: 96px;
+  height: 96px;
+}
