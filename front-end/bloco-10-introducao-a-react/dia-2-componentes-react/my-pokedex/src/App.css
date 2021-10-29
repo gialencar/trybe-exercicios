@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  background-color: lightcyan;
+}
+
+.pokedex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  border: 2px solid rgb(103, 157, 179);
+  border-radius: 1rem;
+  width: 250px;
+  padding: 1%;
+  margin: 1%;
+  background-color: lightskyblue;
+}
+
+.card img {
+  width: 96px;
+  height: 96px;
+}
+
+h1 {
+  text-align: center;
+}
