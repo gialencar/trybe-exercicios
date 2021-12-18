@@ -79,7 +79,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 9-4: _[Projeto - Carrinho de Compras]()_ 
 </details>
 
-## Desenvolvimento Front-end :hourglass_flowing_sand:
+## Desenvolvimento Front-end :round_pushpin: 
 <details open>
 <summary> Expandir / Colapsar </summary>
 
