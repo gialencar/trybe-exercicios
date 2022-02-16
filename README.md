@@ -148,7 +148,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [x] 19-1: _01: Introdução - Back-end_
 - [x] 19-1: _01: Utilizando Containers - Docker_
-- [ ] 19-2: _02: Manipulação e Criação de Imagens no Docker_
+- [x] 19-2: _02: Manipulação e Criação de Imagens no Docker_
 - [ ] 19-3: _03: Orquestrando Containers com Docker Compose_
 - [ ] 19-4: _[04: Projeto - Docker Todo-List]()_
 
