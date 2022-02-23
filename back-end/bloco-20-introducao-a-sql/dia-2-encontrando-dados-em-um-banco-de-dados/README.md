@@ -31,4 +31,7 @@ FROM Scientists.Projects;
 -- Escreva uma query para exibir o nome e as horas dos três projetos com a maior quantidade de horas.
 SELECT `Name`, Hours FROM Scientists.Projects ORDER BY Hours DESC LIMIT 3;
 
+-- Escreva uma query para exibir o código de todos os projetos da tabela AssignedTo sem que haja repetições.
+SELECT DISTINCT Project FROM Scientists.AssignedTo;
+
 ```
