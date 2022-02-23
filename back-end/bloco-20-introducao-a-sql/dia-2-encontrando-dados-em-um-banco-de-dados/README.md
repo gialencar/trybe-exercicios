@@ -23,4 +23,9 @@ SELECT `Name` AS 'Cientista' FROM Scientists.Scientists ORDER BY `Name`;
 -- Escreva uma query para exibir o nome dos Projetos em ordem alfabética descendente.
 SELECT `Name` AS 'Nome do projeto' FROM Scientists.Projects ORDER BY `Name` DESC;
 
+-- Escreva uma query que exiba a string "O projeto Name precisou de Hours horas para ser concluído." para cada projeto.
+SELECT
+	CONCAT('O projeto ', `Name`, ' precisou de ', Hours, ' horas para ser concluído.') AS 'Tempo de conclusão de projeto'
+FROM Scientists.Projects;
+
 ```
