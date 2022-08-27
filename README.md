@@ -140,8 +140,8 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
   
 </details>
 
-## Desenvolvimento Back-end :round_pushpin:
-<details open>
+## Desenvolvimento Back-end :heavy_check_mark:
+<details>
 <summary> Expandir / Colapsar </summary>
 
 ##### Bloco 19: Docker: Utilizando Containers
@@ -172,91 +172,91 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [x] 22-1: _01: Intro - Node.js_
 - [x] 22-1: _01: Node.js - Um motor JavaScript_
-- [ ] 22-2: _02: Node.js - Fluxo Assíncrono_
-- [ ] 22-3: _03: Mocha, Chai e Sinon - Testes de Back-end com Node.js_
-- [ ] 22-4: _04: Express - HTTP com Node.js_
-- [ ] 22-5: _05: Express - Middlewares_
-- [ ] 22-6: _[06: Projeto - Talker Manager]()_
+- [x] 22-2: _02: Node.js - Fluxo Assíncrono_
+- [x] 22-3: _03: Mocha, Chai e Sinon - Testes de Back-end com Node.js_
+- [x] 22-4: _04: Express - HTTP com Node.js_
+- [x] 22-5: _05: Express - Middlewares_
+- [x] 22-6: _[06: Projeto - Talker Manager]()_
 
 ##### Bloco 23: Node.js: Camada de Serviço e Arquitetura Rest e Restful
 
-- [ ] 23-1: _01: Introdução - Arquitetura de Software_
-- [ ] 23-1: _01: Arquitetura de Software - Camada de Model_
-- [ ] 23-2: _02: Arquitetura de Software - Camada de Controller e Service_
-- [ ] 23-3: _03: Arquitetura Web - Rest e Restful_
-- [ ] 23-4: _04: Arquitetura de Software - Testando as Camadas_
-- [ ] 23-5: _[05: Projeto - Store Manager]()_
+- [x] 23-1: _01: Introdução - Arquitetura de Software_
+- [x] 23-1: _01: Arquitetura de Software - Camada de Model_
+- [x] 23-2: _02: Arquitetura de Software - Camada de Controller e Service_
+- [x] 23-3: _03: Arquitetura Web - Rest e Restful_
+- [x] 23-4: _04: Arquitetura de Software - Testando as Camadas_
+- [x] 23-5: _[05: Projeto - Store Manager]()_
 
 ##### Bloco 24: Node.js: ORM e Autenticação
 
-- [ ] 24-1: _01: Introdução - Node.js: ORM e Autenticação_
-- [ ] 24-1: _01: ORM - Interface da aplicação com o banco de dados_
-- [ ] 24-2: _02: ORM - Associations_
-- [ ] 24-3: _03: JWT - (JSON Web Token)_
-- [ ] 24-4: _04: Testando APIs com Testes de Integração_
-- [ ] 24-5: _[05: Projeto - API de Blogs]()_
+- [x] 24-1: _01: Introdução - Node.js: ORM e Autenticação_
+- [x] 24-1: _01: ORM - Interface da aplicação com o banco de dados_
+- [x] 24-2: _02: ORM - Associations_
+- [x] 24-3: _03: JWT - (JSON Web Token)_
+- [x] 24-4: _04: Testando APIs com Testes de Integração_
+- [x] 24-5: _[05: Projeto - API de Blogs]()_
 
 ##### Bloco 25: Deployment
 
-- [ ] 25-1: _01: Introdução - Deploy_
-- [ ] 25-1: _01: Infraestrutura - Deploy com Heroku_
-- [ ] 25-2: _02: Deploy Docker & Heroku_
-- [ ] 25-3: _[03: Projeto - Stranger Things]()_
+- [x] 25-1: _01: Introdução - Deploy_
+- [x] 25-1: _01: Infraestrutura - Deploy com Heroku_
+- [x] 25-2: _02: Deploy Docker & Heroku_
+- [x] 25-3: _[03: Projeto - Stranger Things]()_
 
 ##### Bloco 26: TypeScript
 
-- [ ] 26-1: _01: Introdução - TypeScript_
-- [ ] 26-1: _01: Introdução ao TypeScript_
-- [ ] 26-2: _02: Tipagem Estática e Generics_
-- [ ] 26-3: _03: Express com TypeScript_
-- [ ] 26-4: _[04: Projeto - Trybe Smith]()_
+- [x] 26-1: _01: Introdução - TypeScript_
+- [x] 26-1: _01: Introdução ao TypeScript_
+- [x] 26-2: _02: Tipagem Estática e Generics_
+- [x] 26-3: _03: Express com TypeScript_
+- [x] 26-4: _[04: Projeto - Trybe Smith]()_
 
 ##### Bloco 27: Programação Orientada a Objetos (POO) e SOLID
 
-- [ ] 27-1: _01: Introdução à Orientação a Objetos_
-- [ ] 27-2: _02: Herança e Interfaces_
-- [ ] 27-3: _03: Polimorfismo_
-- [ ] 27-4: _04: SOLID - Introdução e Princípios S, O e D_
-- [ ] 27-5: _05: SOLID - Princípios L e I_
-- [ ] 27-6: _[06: Projeto - Trybers and Dragons]()_
+- [x] 27-1: _01: Introdução à Orientação a Objetos_
+- [x] 27-2: _02: Herança e Interfaces_
+- [x] 27-3: _03: Polimorfismo_
+- [x] 27-4: _04: SOLID - Introdução e Princípios S, O e D_
+- [x] 27-5: _05: SOLID - Princípios L e I_
+- [x] 27-6: _[06: Projeto - Trybers and Dragons]()_
 
 ##### Bloco 28: Projeto - TFC - Trybe Futebol Clube
 
-- [ ] 28-1: _[01: Projeto - TFC - Trybe Futebol Clube]()_
+- [x] 28-1: _[01: Projeto - TFC - Trybe Futebol Clube]()_
 
 ##### Bloco 29: Introdução ao MongoDB
 
-- [ ] 29-1: _01: Introdução - NoSQL_
-- [ ] 29-1: _01: MongoDB - Introdução_
-- [ ] 29-2: _02: Filter Operators_
-- [ ] 29-3: _03: Operadores de consulta_
-- [ ] 29-4: _04: Updates Simples_
-- [ ] 29-5: _05: Updates Complexos - Arrays_
-- [ ] 29-6: _[06: Projeto - Commerce]()_
+- [x] 29-1: _01: Introdução - NoSQL_
+- [x] 29-1: _01: MongoDB - Introdução_
+- [x] 29-2: _02: Filter Operators_
+- [x] 29-3: _03: Operadores de consulta_
+- [x] 29-4: _04: Updates Simples_
+- [x] 29-5: _05: Updates Complexos - Arrays_
+- [x] 29-6: _[06: Projeto - Commerce]()_
 
 ##### Bloco 31: MasterClass - VPS, CI/CD
 
-- [ ] 31-1: _01: Dia 1_
-- [ ] 31-2: _02: Dia 2_
+- [x] 31-1: _01: Dia 1_
+- [x] 31-2: _02: Dia 2_
 
 ##### Bloco 32: Projeto - App de Delivery
 
-- [ ] 32-1: _[01: Projeto - App de Delivery]()_
+- [x] 32-1: _[01: Projeto - App de Delivery]()_
   
 </details>
 
 ## Ciência da Computação :hourglass_flowing_sand:
   
-<details>
+<details open>
 <summary> Expandir / Colapsar </summary>
 
 ##### Bloco 33: Introdução à Python
 
-- [ ] 33-1: _01: Introdução - Ciência da Computação_
-- [ ] 33-1: _01: Aprendendo Python_
-- [ ] 33-2: _02: Entrada e Saída de Dados_
-- [ ] 33-3: _03: Testes_
-- [ ] 33-4: _[04: Projeto - Job Insights]()_
+- [x] 33-1: _01: Introdução - Ciência da Computação_
+- [x] 33-1: _01: Aprendendo Python_
+- [x] 33-2: _02: Entrada e Saída de Dados_
+- [x] 33-3: _03: Testes_
+- [x] 33-4: _[04: Projeto - Job Insights]()_
 
 ##### Bloco 34: Programação Orientada a Objetos e Padrões de Projeto
 
